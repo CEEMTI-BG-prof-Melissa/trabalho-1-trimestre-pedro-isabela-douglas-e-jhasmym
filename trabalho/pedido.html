@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido - Lanchonete</title>
+  </head>
+
+  <body>
+    <!-- títulos -->
+    <h1>🍔 Lanchonete do zé</h1>
+    <a href="index.html"><button>Sair</button></a>
+    <h2>Faça seu pedido</h2>
+
+    <!-- imagem temática da loja -->
+    <img
+      src="https://imgs.search.brave.com/sZxuu7_ljJcQFdQUEzM_nhCuHY5snTlANfRVNLOisbw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yaW9k/YXkuY29tLmJyL3Np/dGUvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTEvbWFya2V0/aW5nLXBhcmEtaGFt/YnVyZ3VlcmlhLTEw/ODB4Njc1LmpwZw"
+      alt="Imagem do nosso hambúrguer premiado do mês, com pão artesanal,
+    carne suculenta, queijo derretido, alface fresca e tomate"
+      width="500"
+    />
+
+    <!-- combos -->
+    <h2>Combos</h2>
+
+    <form action="pedido.html" method="GET">
+      <input type="radio" id="combo1" name="combo" />
+      <label for="combo1"
+        >Combo 1: Hambúrguer + Batata Frita + Refrigerante - R$ 30,00</label
+      ><br />
+      <hr />
+      <input type="radio" id="combo2" name="combo" />
+      <label for="combo2"
+        >Combo 2: Cheeseburguer + Batata Frita + Refrigerante - R$ 35,00</label
+      ><br />
+      <hr />
+      <input type="radio" id="combo3" name="combo" />
+      <label for="combo3"
+        >Combo 3: Hambúrguer + Cheeseburguer + Batata Frita + Refrigerante - R$
+        50,00</label
+      ><br />
+      <hr />
+
+        <br />
+    
+        <!-- lista de adicionais -->
+        <h2>Adicionais</h2>
+        <ul>
+          <li>+ Batata - R$ 5,00 <input type="checkbox" /><br /></li>
+          <hr />
+          <li>
+            + Carne (frango, porco ou peixe) - R$ 14,00
+            <input type="checkbox" /><br />
+          </li>
+          <hr />
+          <li>suco(da sua escolha) - R$ 7,00 <input type="checkbox" /><br /></li>
+          <hr />
+          <li>Refrigerante - R$ 8,00 <input type="checkbox" /><br /></li>
+        </ul>
+    
+        <!-- observações -->
+        <h3>Observações do Pedido</h3>
+    
+        <textarea
+          id="observacoes"
+          placeholder="Digite aqui suas observações sobre o pedido..."
+          rows="10"
+          cols="70"
+        ></textarea>
+        <br /><br />
+    
+        <!-- endereço de entrega -->
+        <label for="endereco">Endereço de Entrega: </label>
+        <input type="text" id="endereco" name="endereco" required /><br /><br />
+    
+        <!-- forma de pagamento -->
+        <label>Forma de Pagamento:</label><br />
+        <input type="radio" id="dinheiro" name="payment" value="Dinheiro" />
+        <label for="dinheiro">Dinheiro</label><br />
+        <input type="radio" id="debito" name="payment" value="Cartão Débito" />
+        <label for="debito">Cartão Débito</label><br />
+        <input type="radio" id="credito" name="payment" value="Cartão Crédito" />
+        <label for="credito">Cartão Crédito</label><br />
+        <input type="radio" id="pix" name="payment" value="PIX" />
+        <label for="pix">PIX</label><br />
+    
+        <!-- botão de confirmação -->
+        <input type="submit" value="Confirmar pedido" />
+    </form>
+    
+  </body>
+</html>
